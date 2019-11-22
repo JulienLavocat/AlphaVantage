@@ -1,0 +1,36 @@
+{
+  "name": "@piigo/alphavantage",
+  "version": "0.0.0",
+  "description": "Alpha Vantage client",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulienLavocat/AlphaVantage.git"
+  },
+  "keywords": [
+    "alpha",
+    "vantage",
+    "finanace",
+    "financial",
+    "data",
+    "market",
+    "stocks",
+    "money"
+  ],
+  "author": "Julien Lavocat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulienLavocat/AlphaVantage/issues"
+  },
+  "homepage": "https://github.com/JulienLavocat/AlphaVantage#readme",
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
