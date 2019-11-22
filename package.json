@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "description": "Alpha Vantage client",
   "main": "src/index.js",
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "publish": "npm publish --registry https://registry.npmjs.org/"
