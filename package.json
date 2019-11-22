@@ -6,7 +6,7 @@
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --registry https://registry.npmjs.org/"
+    "publish": "npm publish --registry https://registry.npmjs.org/ --access=public"
   },
   "repository": {
     "type": "git",
