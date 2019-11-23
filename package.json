@@ -1,6 +1,6 @@
 {
   "name": "@piigo/alphavantage",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Alpha Vantage client",
   "main": "src/index.js",
   "private": false,
