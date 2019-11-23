@@ -1,6 +1,7 @@
 const AVError = require("./error");
 const {Quote, SearchResult} = require("./structures");
 const API = require("./api");
+const Batch = require("./providers/batch");
 
 module.exports = class AlphaVantage {
 
@@ -15,6 +16,8 @@ module.exports = class AlphaVantage {
 		this.useBig = useBig;
 
 		this.api = new API(this.apiKey);
+
+		this.batch = new Batch(this.api);
 	}
 
 	async quote(symbol, useBig = this.useBig) {

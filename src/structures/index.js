@@ -1,4 +1,5 @@
 module.exports = {
 	Quote: require("./quote"),
-	SearchResult: require("./searchresult")
+	SearchResult: require("./searchresult"),
+	BatchQuote: require("./batchQuote")
 };
