@@ -13,6 +13,8 @@ interface AVClient {
 	 */
 	new (useBig?: boolean, apiKey?: string): AVClient;
 
+	batch: AVBatch;
+
 	/**
 	 * Get the current market data of the requested symbol
 	 * @param {string} symbol the symbol to fetch
@@ -25,6 +27,22 @@ interface AVClient {
 	 * @param {string} query Keywords to look for
 	 */
 	search(query: string): Promise<SearchResult[]>;
+}
+
+interface AVBatch {
+	/**
+	 * Get the current market data of multiple symbols
+	 * @param {string[]} symbols symbols to fetch
+	 * @param {boolean} useBig should Big.js be used for this request
+	 */
+	quote(symbols: string[], useBig?: boolean): Promise<BatchQuote>;
+}
+
+interface BatchQuote {
+	symbol: string;
+	price: Big | string;
+	volume: number;
+	timestamp: Date;
 }
 
 interface Quote {
